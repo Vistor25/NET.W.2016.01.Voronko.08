@@ -13,7 +13,7 @@ namespace Task1
             switch (format)
             {
                 case "CRN":
-                    return $"Customer record:{customer.ContactPhone:+# (###) ###-####},{customer.Revenue.ToString("#,#.00", formatProvider)},{customer.Name}";
+                    return $"Customer record: {customer.ContactPhone:+# (###) ###-####}, {customer.Revenue.ToString("#,#.00", formatProvider)}, {customer.Name}";
                 case "NRCByRow":
                     return $"Customer record:\n{customer.Name},\n{customer.Revenue.ToString("#,#.00", formatProvider)},\n{customer.ContactPhone:+# (###) ###-####}";
                 default:

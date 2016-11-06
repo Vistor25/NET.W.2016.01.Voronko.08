@@ -46,13 +46,13 @@ namespace Task1
                 case"NRC":
                     return $"Customer record: {Name}, {Revenue.ToString("#,#.00", formatProvider)}, {ContactPhone:+# (###) ###-####}";
                 case "C":
-                    return $"Customer record: {ContactPhone}";
+                    return $"Customer record: {ContactPhone:+# (###) ###-####}";
                 case "NR":
                     return $"Customer record: {Name}, {Revenue.ToString("#,#.00", formatProvider)}";
                 case "N":
                     return $"Customer record: {Name}";
                 case "R":
-                    return $"Customer record: {Revenue}";
+                    return $"Customer record: {Revenue.ToString("#,#.00", formatProvider)}";
                 default:
                     return $"Customer record: {Name}, {Revenue.ToString("#,#.00", formatProvider)}, {ContactPhone:+# (###) ###-####}";
 
